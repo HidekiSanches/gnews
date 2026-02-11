@@ -6,6 +6,6 @@ server:
   port: 8080
 
 gnews:
-  api-key: "test-api-key"
+  api-key: "AIzaSyDRGqj1kKz0I3BYmTgoW67ey3N_GkFe7ik"
   rate-limit:
     daily-requests: 100
