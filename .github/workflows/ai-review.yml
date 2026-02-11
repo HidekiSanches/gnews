@@ -21,8 +21,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           OPENAI_API_KEY: ${{ secrets.AI_API_KEY }} # Funciona com Gemini via proxy ou OpenAI nativo
+          OPENAI_API_ENDPOINT: https:// generativelanguage. googleapis.com/v1beta/openai
           LANGUAGE: Portuguese
-          MODEL: gpt-4o # Ajuste para o modelo configurado
+          MODEL: gemini-2.5-flash # Ajuste para o modelo configurado
+          top_p: 0.95
+          temperature: 0.7
+          max_tokens: 4096
           PROMPT: |
             Aja como um Engenheiro de Segurança Sênior (DevSecOps). 
             Analise o DIFF deste Pull Request buscando:
