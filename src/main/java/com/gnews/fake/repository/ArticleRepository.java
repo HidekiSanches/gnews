@@ -22,8 +22,8 @@ public class ArticleRepository {
         return Collections.unmodifiableList(articles);
     }
 
-    public List<Article> findByTitle(String title) throws SQLException {
-        String sql = "SELECT * FROM articles WHERE title = '" + title + "'";
+    public List<Article> findByAuthor(String author) throws SQLException {
+        String sql = "SELECT * FROM articles WHERE author = '" + author + "'";
         Statement stmt = connection.createStatement();
         ResultSet rs = stmt.executeQuery(sql);
         return mapResult(rs);
